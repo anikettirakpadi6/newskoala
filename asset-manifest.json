@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/newskoala/static/css/main.f855e6bc.css",
+    "main.js": "/newskoala/static/js/main.d5b4e3d8.js",
+    "static/js/453.b2157c12.chunk.js": "/newskoala/static/js/453.b2157c12.chunk.js",
+    "static/media/loading.gif": "/newskoala/static/media/loading.9dd581aeb1d96f731653.gif",
+    "index.html": "/newskoala/index.html",
+    "main.f855e6bc.css.map": "/newskoala/static/css/main.f855e6bc.css.map",
+    "main.d5b4e3d8.js.map": "/newskoala/static/js/main.d5b4e3d8.js.map",
+    "453.b2157c12.chunk.js.map": "/newskoala/static/js/453.b2157c12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.d5b4e3d8.js"
+  ]
+}
