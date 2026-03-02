@@ -16,10 +16,10 @@ export class Newsitem extends Component {
             alt="..."
           />
           <div className="card-body">
-            <h5 className="card-title">{title}...</h5>
-            <p className="card-text">{description}...</p>
+            <h5 className="card-title">{title ? title.slice(0, 60) : "No title available"}</h5>
+            <p className="card-text">{description ? description.slice(0, 100) : "No description available"}</p>
             <a
-              rel="norefferer"
+              rel="noreferrer"
               href={newsUrl}
               target="_blank"
               className="btn btn-primary"
