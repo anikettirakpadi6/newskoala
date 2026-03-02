@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 export default class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/newskoala">
         <Navbar />
         <Routes>
           <Route path="/" element={<News key="home" pageSize={7} category="general" />} />
