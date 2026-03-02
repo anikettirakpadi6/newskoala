@@ -31,19 +31,9 @@ export class Navbar extends Component {
                     className={({ isActive }) =>
                       isActive ? "nav-link active" : "nav-link"
                     }
-                    to="/"
+                    to="/general"
                   >
                     Home
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "nav-link active" : "nav-link"
-                    }
-                    to="/about"
-                  >
-                    About
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -64,16 +54,6 @@ export class Navbar extends Component {
                     to="/entertainment"
                   >
                     Entertainment
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "nav-link active" : "nav-link"
-                    }
-                    to="/general"
-                  >
-                    General
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -117,7 +97,10 @@ export class Navbar extends Component {
                   </NavLink>
                 </li>
               </ul>
-              <form className="d-flex" role="search">
+              <form
+                className="d-flex"
+                onSubmit={(e) => e.preventDefault()}
+              >
                 <input
                   className="form-control me-2"
                   type="search"
