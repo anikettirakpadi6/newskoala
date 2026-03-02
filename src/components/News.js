@@ -27,9 +27,9 @@ export class News extends Component {
   }
 
   buildUrl = (page) => {
-  const { country, category, pageSize } = this.props;
+  const { category, pageSize } = this.props;
 
-  return `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`;
+  return `/.netlify/functions/news?category=${category}&page=${page}&pageSize=${pageSize}`;
 };
 
   updateNews = async (page) => {
@@ -134,3 +134,4 @@ export class News extends Component {
 }
 
 export default News;
+
